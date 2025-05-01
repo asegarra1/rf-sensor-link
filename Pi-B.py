@@ -91,7 +91,7 @@ def wait_for_code(timeout=None):
                     time_label.config(text=f"Last Update: {time.strftime('%Y-%m-%d %H:%M:%S')}")
                     return value
 
-                elif 40 <= value < 80:
+                elif 30 <= value < 80:
                     humi = value
                     humi_label.config(text=f"Humidity: {humi:.1f}%")
                     time_label.config(text=f"Last Update: {time.strftime('%Y-%m-%d %H:%M:%S')}")
